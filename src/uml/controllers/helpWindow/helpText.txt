@@ -1,0 +1,15 @@
+MOVING A CLASS:
+    - left mouse click on box + drag
+
+RESCALING A CLASS:
+    - left mouse click on right border + drag
+
+EDIT/REMOVE A CLASS:
+    - right mouse click on class
+
+EDIT/REMOVE ARROW ( = relation):
+    - right mouse click on the departure-class of the arrow
+    - right mouse click on arrow
+
+ADD NEW CLASS:
+    - right mouse click on background

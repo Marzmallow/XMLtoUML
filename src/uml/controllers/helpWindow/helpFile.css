@@ -1,0 +1,11 @@
+.textContainer {
+    -fx-background-color: antiquewhite;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 10;
+    -fx-border-width: 1;
+}
+
+.mainContainer {
+    -fx-background-color: lightgray;
+}

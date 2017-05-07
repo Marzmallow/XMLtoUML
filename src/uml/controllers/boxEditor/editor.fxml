@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane fx:id="tabPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Properties">
+         <content>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="632.0" prefWidth="480.0" styleClass="scroll-pane" stylesheets="@boxEditor.css">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="544.0" prefWidth="480.0" styleClass="backgroundVBox" stylesheets="@boxEditor.css">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="583.0" prefWidth="426.0" styleClass="mainContainer" stylesheets="@boxEditor.css">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="81.0" text="Name">
+                                       <font>
+                                          <Font name="Arial" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="18.0" prefWidth="424.0" spacing="87.0">
+                                       <VBox.margin>
+                                          <Insets left="-30.0" top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Label prefHeight="23.0" prefWidth="90.0" text="Change name:" />
+                                          <TextField fx:id="nameTextField" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="80.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="30.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="424.0" styleClass="attributeAVBox" stylesheets="@boxEditor.css" VBox.vgrow="NEVER">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="115.0" text="Attributes">
+                                             <font>
+                                                <Font name="Arial" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#newAttribute" prefHeight="22.0" prefWidth="21.0" text="+">
+                                             <HBox.margin>
+                                                <Insets left="240.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="9.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <padding>
+                                          <Insets bottom="3.0" left="5.0" right="35.0" top="3.0" />
+                                       </padding>
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="scope" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="visibility" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="101.0" text="name" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="101.0" text="type" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="-30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="30.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox fx:id="attributeVBox" prefHeight="70.0" prefWidth="424.0" styleClass="subVBox" stylesheets="@boxEditor.css">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="61.0" styleClass="attributeAVBox" VBox.vgrow="NEVER">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="136.0" text="Operations">
+                                             <font>
+                                                <Font name="Arial" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#newOperation" prefHeight="22.0" prefWidth="21.0" text="+">
+                                             <font>
+                                                <Font name="System Bold" size="9.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="218.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <padding>
+                                          <Insets bottom="3.0" left="5.0" right="35.0" top="3.0" />
+                                       </padding>
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="scope" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="visibility" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="101.0" text="name" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="101.0" text="type" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="-30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="30.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox fx:id="operationVBox" prefHeight="70.0" prefWidth="424.0" styleClass="subVBox" stylesheets="@boxEditor.css">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="61.0" styleClass="attributeAVBox">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="136.0" text="Relations">
+                                             <font>
+                                                <Font name="Arial" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#newRelation" prefHeight="22.0" prefWidth="21.0" text="+">
+                                             <font>
+                                                <Font name="System Bold" size="9.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="218.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                                       <padding>
+                                          <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                                       </padding>
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="type" textAlignment="CENTER" />
+                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="101.0" text="with" textAlignment="CENTER">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets left="-45.0" />
+                                             </padding></Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="-30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="30.0" top="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox fx:id="relationVBox" prefHeight="70.0" prefWidth="424.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <ButtonBar prefHeight="37.0" prefWidth="199.0">
+                                      <buttons>
+                                        <Button mnemonicParsing="false" onAction="#close" text="Cancel" />
+                                          <Button mnemonicParsing="false" onAction="#savePropertyChanges" text="Save properties" />
+                                          <Button mnemonicParsing="false" onAction="#saveAndSwap" text="Save and swap" />
+                                      </buttons>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets bottom="10.0" right="10.0" />
+                                       </padding>
+                                    </ButtonBar>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="111.0" prefWidth="407.0">
+                           <children>
+                              <Text fx:id="errorText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="417.13671875">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+      </Tab>
+      <Tab text="Layout">
+         <content>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="632.0" prefWidth="480.0" styleClass="scroll-pane" stylesheets="@boxEditor.css">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="544.0" prefWidth="480.0" styleClass="backgroundVBox" stylesheets="@boxEditor.css">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="225.0" prefWidth="424.0" styleClass="mainContainer" stylesheets="@boxEditor.css">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="268.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Background color:" />
+                                    <ComboBox fx:id="bBackgroundColor" editable="true" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="12.0" right="20.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="268.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Border color:" />
+                                    <ComboBox fx:id="bBorderColor" editable="true" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="39.0" right="20.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="51.0" prefWidth="317.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Text color:" />
+                                    <ComboBox fx:id="bTextColor" editable="true" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="53.0" right="20.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="317.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Font family:" />
+                                    <ComboBox fx:id="bFontFamily" editable="true" prefWidth="150.0">
+                                       <HBox.margin>
+                                          <Insets left="46.0" right="20.0" />
+                                       </HBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </HBox>
+                              <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                                <buttons>
+                                  <Button mnemonicParsing="false" onAction="#close" text="Cancel" />
+                                    <Button mnemonicParsing="false" onAction="#saveLayoutChanges" text="Save layout" />
+                                    <Button mnemonicParsing="false" onAction="#saveAll" text="Save all" />
+                                </buttons>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </ButtonBar>
+                           </children>
+                        </VBox>
+                        <HBox alignment="BOTTOM_RIGHT" prefHeight="28.0" prefWidth="422.0">
+                           <children>
+                              <CheckBox fx:id="checkBox" mnemonicParsing="false" text="Set for all boxes" />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

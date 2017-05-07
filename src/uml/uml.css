@@ -1,0 +1,42 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+.classVBox {
+    -fx-background-color: antiquewhite;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-width: 1;
+    -fx-alignment: CENTER;
+}
+
+.classVBoxCenter {
+    -fx-border-color: black;
+    -fx-border-width: 1 0 1 0;
+}
+
+.classname {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.triangle {
+    -fx-stroke-width: 1;
+    -fx-fill: lightgray;
+    -fx-stroke: black;
+}
+
+.rhombus {
+    -fx-stroke-width: 1;
+    -fx-fill: lightgray;
+    -fx-stroke: black;
+}
+
+.paneView {
+    -fx-background-color: lightgray;
+}
+
+.editor {
+    -fx-background-color: antiquewhite;
+}

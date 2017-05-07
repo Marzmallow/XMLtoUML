@@ -1,0 +1,4 @@
+.borderpane {
+    -fx-background-color: lightgray;
+    -fx-border-color: red;
+}

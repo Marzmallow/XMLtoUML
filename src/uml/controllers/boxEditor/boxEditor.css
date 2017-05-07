@@ -1,0 +1,71 @@
+.scroll-pane .scroll-bar:vertical {
+    -fx-unit-increment: 20 ;
+    -fx-block-increment: 100 ;
+}
+
+.attributetitle {
+    -fx-border-width: 0;
+    -fx-border-color: antiquewhite;
+    -fx-fill: antiquewhite;
+}
+
+.ErrorTextField {
+    -fx-text-box-border: RED ;
+    -fx-focus-color: RED ;
+    -fx-text-fill: RED;
+}
+
+.error TextField {
+    -fx-text-box-border: RED;
+    -fx-focus-color: RED ;
+    -fx-text-fill: RED;
+}
+
+.error ComboBox {
+    -fx-border-color: RED;
+}
+
+.removebutton {
+    -fx-background-color: gray;
+    -fx-background-radius: 15em;
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-max-width: 15px;
+    -fx-max-height: 15px;
+}
+.removebutton:hover {
+    -fx-background-color: lightcoral;
+    -fx-background-radius: 15em;
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-max-width: 15px;
+    -fx-max-height: 15px;
+}
+
+.mainContainer {
+    -fx-background-color: antiquewhite;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 10;
+    -fx-border-width: 1;
+}
+
+.attributeAVBox {
+    -fx-border-color: black;
+    -fx-border-width: 1 0 0 0;
+}
+
+
+.attributeBVBox {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+}
+
+.backgroundVBox {
+    -fx-background-color: lightgray;
+}
+
+.componentHBox {
+    -fx-padding: 3 5 3 5;
+    -fx-spacing: 5;
+}
